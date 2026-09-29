@@ -1,0 +1,2 @@
+This demo is a proof of concept demonstrating communication from smart buildings to a smart city. We created two building with different profiles in terms of height and occupancy.
+We then generated two different datasets, one for each buildings, containing time stamped measurements of occupancy, electricity and gas consuption, as well as water consumption. The datasets cover one year of operation with 0ne minute granulometry.
