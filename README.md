@@ -12,10 +12,9 @@ This demo runs a Flower Collaborative Agent across two SuperNodes. Each SuperNod
 
 | Example site | SuperNode | Patient records |
 | --- | --- | --- |
-| Lakeside Medical Center | `supernode-1` | [Data CSV](data/supernode-a/patient_data.csv) |
-| Northstar Regional Hospital | `supernode-2` | [Data CSV](data/supernode-b/patient_data.csv) |
-| Harborview General Hospital | `supernode-3` | [Data Markdown](data/supernode-c/patient_data.md) |
-| Pacific Maple Hospital | `supernode-4` | [Data TXT](data/supernode-d/patient_data.txt) |
+| Building A: Solaire | `supernode-1` | [Data CSV](data/supernode-a/patient_data.csv) |
+| Building B: Sales force Tower | `supernode-2` | [Data CSV](data/supernode-b/patient_data.csv) |
+
 
 ### Register and connect SuperNodes to SuperGrid
 
