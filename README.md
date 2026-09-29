@@ -13,7 +13,7 @@ This demo runs a Flower Collaborative Agent across two SuperNodes. Each SuperNod
 | Example site | SuperNode | Patient records |
 | --- | --- | --- |
 | Building A: Solaire | `supernode-1` | [Data CSV](data/data/supernode-building-a/Building%20A%20solaire%20description.xlsx) |
-| Building B: Sales force Tower | `supernode-2` | [Data CSV](data/supernode-building-b//patient_data.csv) |
+| Building B: Sales force Tower | `supernode-2` | [Data CSV](data/supernode-building-b/Building%20B%20Sales%20force%20Tower%20description.xlsx) |
 
 
 ### Register and connect SuperNodes to SuperGrid
