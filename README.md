@@ -74,6 +74,32 @@ Create the federation and add the SuperNodes with the Flower CLI or on [flower.a
 - [Create and Manage Federations](https://flower.ai/docs/framework/how-to-create-and-manage-federations.html). Ensure you create a federation of type `deployment`, this ensures `SuperNodes` can be connected to it.
 - [Add SuperNodes to a Federation](https://flower.ai/docs/framework/how-to-connect-supernodes-to-supergrid.html)
 
+#### Add the SuperNodes to the `@alaind/smart-legos` federation
+
+This demo uses the `deployment` federation `@alaind/smart-legos`. If it doesn't exist yet, the `alaind` account can create it (federations are deployment type unless `--simulation` is passed):
+
+```shell
+uvx flwr federation create smart-legos supergrid --description "Smart buildings to smart city demo"
+```
+
+Look up the IDs of your registered SuperNodes:
+
+```shell
+uvx flwr supernode list supergrid --verbose
+```
+
+Add each SuperNode to the federation, replacing `<supernode-id>` with the IDs from the list:
+
+```shell
+uvx flwr federation add-supernode <supernode-id> @alaind/smart-legos supergrid
+```
+
+Check that the SuperNodes are in the federation:
+
+```shell
+uvx flwr federation list supergrid --federation @alaind/smart-legos
+```
+
 ## Run the app
 
 Check how to run this app in the [`Flower Chat terminal`](https://flower.ai/docs/agent/tutorials/get-started-with-flower-agent.html) or on [flower.ai](https://flower.ai/docs/agent/tutorials/quickstart.html). For everything else check the [Flower Agent Documentation](https://flower.ai/docs/agent/)

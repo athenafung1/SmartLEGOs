@@ -126,9 +126,10 @@ print_next_steps() {
 ----------------------------------------------------------------------
 Next steps (done outside this script):
 
-  - Create a federation of type `deployment` and add the four SuperNodes
+  - Add the SuperNodes to the `deployment` federation @alaind/smart-legos
     (via the Flower CLI or flower.ai):
-      https://flower.ai/docs/framework/how-to-create-and-manage-federations.html
+      uvx flwr supernode list supergrid --verbose      # get the SuperNode IDs
+      uvx flwr federation add-supernode <supernode-id> @alaind/smart-legos supergrid
       https://flower.ai/docs/framework/how-to-connect-supernodes-to-supergrid.html
 
   - Run the agent app (@flwrlabs/collaborative-agent):

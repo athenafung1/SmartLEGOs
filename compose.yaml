@@ -7,10 +7,10 @@ services:
       - --allow-runtime-dependency-installation
     environment:
       FLWR_MODEL_API_KEY: ${FLWR_MODEL_API_KEY:?Set FLWR_MODEL_API_KEY before running docker compose}
-      FLWR_FILESYSTEM_ALLOWED_DIRS: /data/supernode-a
+      FLWR_FILESYSTEM_ALLOWED_DIRS: /data/supernode-building-a
     volumes:
       - ./keys:/keys:ro
-      - ./data/supernode-a:/data/supernode-building-a
+      - ./data/supernode-building-a:/data/supernode-building-a
 
   supernode-2:
     image: flwr/supernode:1.39.0
@@ -20,10 +20,10 @@ services:
       - --allow-runtime-dependency-installation
     environment:
       FLWR_MODEL_API_KEY: ${FLWR_MODEL_API_KEY:?Set FLWR_MODEL_API_KEY before running docker compose}
-      FLWR_FILESYSTEM_ALLOWED_DIRS: /data/supernode-b
+      FLWR_FILESYSTEM_ALLOWED_DIRS: /data/supernode-building-b
     volumes:
       - ./keys:/keys:ro
-      - ./data/supernode-b:/data/supernode-building-b
+      - ./data/supernode-building-b:/data/supernode-building-b
 
   supernode-3:
     image: flwr/supernode:1.39.0
@@ -33,7 +33,7 @@ services:
       - --allow-runtime-dependency-installation
     environment:
       FLWR_MODEL_API_KEY: ${FLWR_MODEL_API_KEY:?Set FLWR_MODEL_API_KEY before running docker compose}
-      FLWR_FILESYSTEM_ALLOWED_DIRS: /data/supernode-c
+      FLWR_FILESYSTEM_ALLOWED_DIRS: /data/supernode-building-c
     volumes:
       - ./keys:/keys:ro
-      - ./data/supernode-c:/data/supernode-building-c
+      - ./data/supernode-building-c:/data/supernode-building-c
