@@ -30,14 +30,14 @@ SUPERLINK_ADDR="fleet-supergrid.flower.ai:443"
 
 # Example site names/locations shown on the federation map (order = key index 0..3).
 NAMES=(
-  "Building A"
-  "Building B"
-  "Building C"
+  "Building A: Solaire"
+  "Building B: Sales Force Tower"
+
 )
 LOCATIONS=(
-  "34.0522,-118.2437"
-  "41.8781,-87.6298"
-  "40.7128,-74.0060"
+  "-37.788241,-122.393614"
+  "-37.789774,-22.396932"
+ 
 )
 NUM_NODES=${#NAMES[@]}
 
