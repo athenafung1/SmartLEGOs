@@ -17,8 +17,6 @@
 #
 # Usage:
 #   ./setup_flower_hackathon.sh                 # Docker Compose mode
-#   ./setup_flower_hackathon.sh --no-docker     # run flower-supernode natively
-#   ./setup_flower_hackathon.sh --setup-only    # keys + register only, don't launch
 #
 # Environment:
 #   FLWR_MODEL_API_KEY   Model API key (flower.ai -> Profile -> Settings -> API Keys).
@@ -32,16 +30,14 @@ SUPERLINK_ADDR="fleet-supergrid.flower.ai:443"
 
 # Example site names/locations shown on the federation map (order = key index 0..3).
 NAMES=(
-  "Lakeside Medical Center"
-  "Northstar Regional Hospital"
-  "Harborview General Hospital"
-  "Pacific Maple Hospital"
+  "Building A"
+  "Building B"
+  "Building C"
 )
 LOCATIONS=(
   "34.0522,-118.2437"
   "41.8781,-87.6298"
   "40.7128,-74.0060"
-  "49.2827,-123.1207"
 )
 NUM_NODES=${#NAMES[@]}
 
