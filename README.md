@@ -1,14 +1,14 @@
 # Flower Collaborative Agent Hackathon
 This demo is a proof of concept demonstrating communication from smart buildings to a smart city. We created two buildings with different profiles in terms of height and occupancy.
 We then generated two different datasets, one for each building, containing time stamped measurements of occupancy, electricity and gas consuption, as well as water consumption. The datasets cover one year of operation with one minute granulometry.
-This demo runs a Flower Collaborative Agent across two SuperNodes. Each SuperNode has its own synthetic building records in `data/`, with a different file format or layout for the agent to work with. This example uses [@flwrlabs/collaborative-agent](https://flower.ai/apps/flwrlabs/collaborative-agent).
+This demo runs a Flower Collaborative Agent across two SuperNodes. Each SuperNode has its own synthetic building records in `data/`for the agent to work with. This example uses [@flwrlabs/collaborative-agent](https://flower.ai/apps/flwrlabs/collaborative-agent).
 
 > [!NOTE]
 > To follow along, you'll need a [Flower account](https://flower.ai) with access to SuperGrid.
 
 ## Federation setup
 
-![Map of the two buildings in San Francisco(fedeation_map_view.png)
+![Map of the two buildings in San Francisco(mapbuildings.png)
 
 | Example site | SuperNode | Patient records |
 | --- | --- | --- |
